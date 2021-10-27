@@ -56,4 +56,4 @@ You may also auto-calculate the tracking path based in the "referer" information
 - **Can I use this to track visits to my GitHub README and other GitHub-served content?** No, you cannot - see https://github.com/igrigorik/ga-beacon/commit/6acd8627bb7be36f24f5516e9873c92719a50e55
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-50247013-2/)](https://github.com/fabiofalavinha/realm-cocoa-ga-test)
+[![Analytics](https://ga-beacon.appspot.com/UA-50247013-2/welcome-page)](https://github.com/fabiofalavinha/realm-cocoa-ga-test)
