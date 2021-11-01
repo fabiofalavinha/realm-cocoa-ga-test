@@ -56,4 +56,33 @@ You may also auto-calculate the tracking path based in the "referer" information
 - **Can I use this to track visits to my GitHub README and other GitHub-served content?** No, you cannot - see https://github.com/igrigorik/ga-beacon/commit/6acd8627bb7be36f24f5516e9873c92719a50e55
 
 
-<img src="https://api.segment.io/v1/pixel/page?data=ewogICJ3cml0ZUtleSI6ICI2bzVOOVNJVnFZcW9HVGt6SlJuRks3OGhZV2pwZkp5SSIsCiAgInR5cGUiOiAicGFnZSIsCiAgImFub255bW91c0lkIjogImRhYmFmZGM1LTM0Y2ItNDg3Zi1hOTE5LTYzNTA2ZTJmOTIzZCIsCiAgImV2ZW50IjogIkdpdGh1YiBUcmFja2luZyIsCiAgIm5hbWUiOiAiUkVBRE1FIiwKICAicHJvcGVydGllcyI6IHsKICAgICAgICAiR29vZ2xlIEFuYWx5dGljcyI6IHRydWUsCiAgICAgICAgInRpdGxlIjogIlJlYWRtZS5tZCIsCiAgICAgICAgInVybCI6ICJodHRwczovL2dpdGh1Yi5jb20vZmFiaW9mYWxhdmluaGEvcmVhbG0tY29jb2EtZ2EtdGVzdC9ibG9iL21hc3Rlci9SRUFETUUubWQiCiAgIH0KfQ==">
+<script>
+    function uuidv4() {
+        return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+            (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+        );
+    }
+
+    var pixelBeaconElement = document.getElementById('pixelBeacon');
+    if (!pixelBeaconElement) {
+        console.log('No pixel beacon was found');
+    } else {
+        const payload = {
+            "writeKey": "6o5N9SIVqYqoGTkzJRnFK78hYWjpfJyI",
+            "type": "page",
+            "anonymousId": uuidv4(),
+            "event": "Github Tracking",
+            "name": "README",
+            "properties": {
+                    "Google Analytics": true,
+                    "title": document.title,
+                    "url": window.location.href
+            }
+        };
+        console.log('Payload: ' + JSON.stringfy(payload));
+        console.log('Base64: ' + atob(payload))
+        pixelBeaconElement.src = `https://api.segment.io/v1/pixel/page?data=${atob(payload)}`;
+    }
+</script>
+
+<img id="pixelBeacon">
