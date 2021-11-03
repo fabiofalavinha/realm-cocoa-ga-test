@@ -56,4 +56,4 @@ You may also auto-calculate the tracking path based in the "referer" information
 - **Can I use this to track visits to my GitHub README and other GitHub-served content?** No, you cannot - see https://github.com/igrigorik/ga-beacon/commit/6acd8627bb7be36f24f5516e9873c92719a50e55
 
 
-<img src="https://cyclic-heavy-limit.glitch.me">
+<img src="https://cyclic-heavy-limit.glitch.me?s=https://github.com/fabiofalavinha/realm-cocoa-ga-test">
