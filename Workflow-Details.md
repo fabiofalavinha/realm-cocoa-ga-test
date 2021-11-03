@@ -56,4 +56,4 @@ You may also auto-calculate the tracking path based in the "referer" information
 - **Can I use this to track visits to my GitHub README and other GitHub-served content?** No, you cannot - see https://github.com/igrigorik/ga-beacon/commit/6acd8627bb7be36f24f5516e9873c92719a50e55
 
 
-<img src="https://api.segment.io/v1/pixel/page?data=ewogICJ3cml0ZUtleSI6ICI2bzVOOVNJVnFZcW9HVGt6SlJuRks3OGhZV2pwZkp5SSIsCiAgInR5cGUiOiAicGFnZSIsCiAgImFub255bW91c0lkIjogImRhYmFmZGM1LTM0Y2ItNDg3Zi1hOTE5LTYzNTA2ZTJmOTIzZCIsCiAgImV2ZW50IjogIkdpdGh1YiBUcmFja2luZyIsCiAgIm5hbWUiOiAiUkVBRE1FIiwKICAicHJvcGVydGllcyI6IHsKICAgICAgICAiR29vZ2xlIEFuYWx5dGljcyI6IHRydWUsCiAgICAgICAgInRpdGxlIjogIldvcmtmbG93LURldGFpbHMubWQiLAogICAgICAgICJ1cmwiOiAiaHR0cHM6Ly9naXRodWIuY29tL2ZhYmlvZmFsYXZpbmhhL3JlYWxtLWNvY29hLWdhLXRlc3QvYmxvYi9tYXN0ZXIvV29ya2Zsb3ctRGV0YWlscy5tZCIKICAgfQp9">
+<img src="https://cyclic-heavy-limit.glitch.me?s=https://github.com/fabiofalavinha/realm-cocoa-ga-test/Workflow-Details.md">
